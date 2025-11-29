@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noqta — أضف وظيفة</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap RTL -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <style>
+    :root{
+      --purple-700: #4b0f66;
+      --purple-600: #66267a;
+      --light-bg: #fbf3fb;
+    }
+    body{
+      font-family:'Cairo', sans-serif;
+      background:var(--light-bg);
+    }
+    .topbar{
+      background:var(--purple-700);
+      color:#fff;
+    }
+    .brand{
+      font-weight:700;
+      font-size:1.4rem;
+      color:#f5d1ff;
+    }
+    .section-card{
+      background:#fff;
+      padding:2rem;
+      border-radius:12px;
+      box-shadow:0 8px 26px rgba(80,0,100,0.12);
+    }
+    .btn-main{
+      background:var(--purple-600);
+      color:#fff;
+      border:none;
+      box-shadow:0 6px 16px rgba(110,30,145,0.22);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <nav class="topbar py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="brand">Noqta</div>
+      <div>
+        <a href="index.html" class="text-white me-3">الرئيسية</a>
+        <a href="dashboard.html" class="text-white">لوحة التحكم</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-5">
+    <h2 class="fw-bold mb-4" style="color:var(--purple-700);">أضف فرصة عمل جديدة</h2>
+
+    <div class="section-card">
+
+      <form>
+        <!-- Job Title -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">عنوان الوظيفة</label>
+          <input type="text" class="form-control" placeholder="مثال: مطور واجهات أمامية React">
+        </div>
+
+        <!-- Job Category -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">التخصص</label>
+          <select class="form-select">
+            <option selected disabled>اختر التخصص</option>
+            <option>تطوير</option>
+            <option>تصميم</option>
+            <option>كتابة</option>
+            <option>تسويق</option>
+          </select>
+        </div>
+
+        <!-- Job Type -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">نوع العمل</label>
+          <select class="form-select">
+            <option>دوام كامل</option>
+            <option>جزئي</option>
+            <option>عمل حر</option>
+            <option>عن بعد فقط</option>
+          </select>
+        </div>
+
+        <!-- Salary -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">الراتب (اختياري)</label>
+          <input type="text" class="form-control" placeholder="مثال: 3500 - 6000 ريال">
+        </div>
+
+        <!-- Job Description -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">وصف الوظيفة</label>
+          <textarea class="form-control" rows="5" placeholder="اكتب تفاصيل الوظيفة والمسؤوليات..."></textarea>
+        </div>
+
+        <!-- Requirements -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">المتطلبات</label>
+          <textarea class="form-control" rows="4" placeholder="اكتب المهارات المطلوبة"></textarea>
+        </div>
+
+        <hr>
+
+        <h5 class="fw-bold mt-4 mb-3" style="color:var(--purple-700);">بيانات الشركة</h5>
+
+        <!-- Company Name -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">اسم الشركة</label>
+          <input type="text" class="form-control" placeholder="مثال: شركة نقاط التقنية">
+        </div>
+
+        <!-- Company Website -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">موقع الشركة (اختياري)</label>
+          <input type="text" class="form-control" placeholder="https://company.com">
+        </div>
+
+        <!-- Company Logo -->
+        <div class="mb-3">
+          <label class="form-label fw-semibold">شعار الشركة</label>
+          <input type="file" class="form-control">
+        </div>
+
+        <button class="btn btn-main w-100 py-2 mt-3">نشر الوظيفة</button>
+
+      </form>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
