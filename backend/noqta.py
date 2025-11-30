@@ -10,7 +10,7 @@ Services = [
     ["API", 950]
 ]
 
-print("products:")
+print("Services:")
 
 
 for i in range(len(Services)):
@@ -19,19 +19,19 @@ for i in range(len(Services)):
 
 num = input("Enter product number: ")
 
-
+       #دالة تاكد انه ارقام
 if num.isdigit():
     num = int(num)
 
    
     if num >= 1 and num <= len(Services):
-        product = Services[num - 1]   
-        name = product[0]
-        price = product[1]
+        Services = Services[num - 1]   
+        name = Services[0]
+        price = Services[1]
 
         total = price + (price * TAX)
 
-        print("product:", name)
+        print("Services:", name)
         print("price before tax:", price)
         print("price after tax:", round(total, 2))
 
